@@ -1,0 +1,19 @@
+.arrow-scroll-top {
+  background: url("../../../../../image/up-arrow.gif") no-repeat scroll 0 0 transparent;
+  bottom: 60px;
+  color: #FF891B;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  height: 25px;
+  line-height: 30px;
+  opacity: 0.6;
+  position: fixed;
+  left: 50px;
+  text-align: center;
+  width: 80px;
+}
+
+.arrow-scroll-top:hover {
+    opacity:1;   
+}

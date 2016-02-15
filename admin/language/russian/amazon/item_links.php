@@ -1,0 +1,27 @@
+<?php
+$_['lang_title']                    = 'OpenBay Pro для Amazon | Item links';
+$_['lang_openbay']                  = 'OpenBay Pro';
+$_['lang_overview']                 = 'Обзор Amazon';
+$_['lang_btn_return']               = 'Возврат';
+$_['lang_link_items']               = 'Link items';
+$_['lang_item_links']               = 'Ссылки на элемент';
+$_['lang_desc1']                    = 'Linking your items will allow for stock control on your Amazon listings.<br /> For each item that is updated the local stock (the stock available in your OpenCart store) will update your Amazon listing';
+$_['lang_desc2']                    = 'You can link items manualy by entering Amazon SKU and product name or load all unlinked products and then enter amazon SKUs. (Uploading products from OpenCart to Amazon will automaticaly add links)';
+$_['lang_load_btn']                 = 'Загрузить';
+$_['lang_new_link']                 = 'Новая ссылка';
+$_['lang_autocomplete_product']     = 'Продукт<span class="help">(Autocomplete from name)</span>';
+$_['lang_amazon_sku']               = 'Amazon item SKU';
+$_['lang_action']                   = 'Действие';
+$_['lang_add']                      = 'Добавить';
+$_['lang_add_sku_tooltip']          = 'Добавить другой sku';
+$_['lang_remove']                   = 'Удалить';
+$_['lang_linked_items']             = 'Linked items';
+$_['lang_unlinked_items']           = 'Unlinked items';
+$_['lang_name']                     = 'Имя';
+$_['lang_model']                    = 'Модель';
+$_['lang_combination']              = 'Комбинация';
+$_['lang_sku']                      = 'SKU';
+$_['lang_amazon_sku']               = 'Amazon item SKU';
+$_['lang_sku_empty_warning']        = 'Amazon SKU can not be empty!';
+$_['lang_name_empty_warning']       = 'Название продукта не должно быть пустым!';
+$_['lang_product_warning']          = 'Продукт не существует, пожалуйста, воспользуйтесь автозаполнением.';

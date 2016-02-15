@@ -1,0 +1,284 @@
+* {
+     font-family: 'Open Sans', sans-serif;
+}
+
+body, td {font-size: 15px;
+font-family: 'Open Sans', sans-serif;
+line-height: 20px;
+}
+.box > .heading {
+    background: #ACEEAD;
+
+	-webkit-border-radius: 0px 0px 0px 0px;
+	-moz-border-radius: 0px 0px 0px 0px;
+	-khtml-border-radius:  0px 0px 0px 0px;
+	border-radius:  0px 0px 0px 0px;
+    height: 43px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom:0px;
+}
+
+.box > .heading h1 {
+    color: #222;
+    float: left;
+    font-size: 18px;
+    margin: 0;
+    padding: 11px 0 0;
+}
+
+.box > .content {
+    border: none;
+    min-height: 300px;
+    overflow: auto;
+    padding-top: 10px;
+}
+
+.pagination .links b {
+    background: none repeat scroll 0 0 #269BC6;
+    border: 1px solid #269BC6;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 4px 10px;
+    text-decoration: none;
+}
+
+.pagination .links a {
+    border: 1px solid #269BC6;
+    color: #269BC6;
+    font-size: 12px;
+    padding: 4px 10px;
+    text-decoration: none;
+}
+
+
+
+a.button, .list a.button {
+	-webkit-border-radius: 0px 0px 0px 0px;
+	-moz-border-radius: 0px 0px 0px 0px;
+	-khtml-border-radius:  0px 0px 0px 0px;
+	border-radius:  0px 0px 0px 0px;
+}
+
+
+div#menu {
+font-size: 12px;
+font-family: 'Arial', sans-serif;
+line-height: 15px;
+}
+
+div#menu > ul li a {
+font-size: 12px;
+font-family: 'Arial', sans-serif;
+line-height: 15px;
+}
+
+input, select, textarea{
+font-size: 15px;
+font-family: 'Open Sans', sans-serif;
+line-height: 20px;
+    border: 1px solid #CCC;
+
+}
+
+select {padding-left: 3px;
+}
+select  option {
+font-size: 15px;
+font-family: 'Open Sans', sans-serif;
+line-height: 20px;
+padding-left: 3px;
+padding-right: 3px;
+}
+
+input, select{
+line-height: 26px;
+/* height: 25px; */
+}
+ .scrollbox{
+ font-size: 17px;
+line-height: 17px;
+height: 17px;
+}
+
+ .scrollbox input{
+ font-size: 17px;
+line-height: 16px;
+height: 16px;
+}
+
+.htabs a {font-size: 17px;
+font-weight: normal;
+font-family: 'Open Sans', sans-serif;
+background: url("") 0 0  #DFDFDF;
+padding-bottom: 9px;
+line-height: 17px;
+}
+
+.htabs a.selected {
+    background: none repeat scroll 0 0 #FFF;
+    border-left: 1px solid #DDD;
+    border-right: 1px solid #DDD;
+    border-top: 1px solid #DDD;
+    padding-bottom: 10px;
+}
+
+.htabs  {
+
+padding-bottom: 3px;
+}
+
+#content {
+    background: url("") 0 1px #FFFFFF;
+    min-width: 900px;
+    padding: 10px 30px 200px;
+}
+
+.breadcrumb {float: right;
+}
+
+
+.vtabs a {
+font-size: 17px;
+font-weight: normal;
+background: url("") 0 0  #DFDFDF;
+min-width: 200px;
+width: 200px;
+font-family: 'Open Sans', sans-serif;
+overflow: hidden;
+
+}
+/* #ACEEAD */
+.vtabs a.selected {
+    background: none repeat scroll 0 0 #7D00A6;
+/*
+ padding-right: 15px;
+    margin-right: -15px;
+    */
+    border-bottom: 1px solid #DDD;
+    border-left: 1px solid #DDD;
+    border-top: 1px solid #DDD;
+    color: #FFF;
+}
+
+.htabs a.selected {
+    background: none repeat scroll 0 0 #FFF;
+    border-left: 1px solid #DDD;
+    border-right: 1px solid #DDD;
+    border-top: 1px solid #DDD;
+}
+
+
+.vtabs {
+font-size: 17px;
+font-weight: normal;
+min-width: 200px;
+width: auto;
+margin-right: 10px;
+}
+
+
+.scrollbox {
+
+    height: 200px;
+
+ }
+
+ a.markbutton {
+	text-decoration: none;
+	color: #FFF;
+	display: inline-block;
+	padding: 6px 16px 3px 16px;
+	font-size: 17px;
+	line-height: 20px;
+	background: green;
+   /*
+	-webkit-border-radius: 2px 2px 2px 2px;
+	-moz-border-radius: 2px 2px 2px 2px;
+	-khtml-border-radius: 2px 2px 2px 2px;
+	border-radius: 2px 2px 2px 2px;
+	*/
+}
+
+ a.markbuttono {
+	text-decoration: none;
+	color: #FFF;
+	display: inline-block;
+	padding: 5px 15px 5px 15px;
+	background: orange;
+	-webkit-border-radius: 2px 2px 2px 2px;
+	-moz-border-radius: 2px 2px 2px 2px;
+	-khtml-border-radius: 2px 2px 2px 2px;
+	border-radius: 2px 2px 2px 2px;
+}
+
+.loader {
+
+	color: #FFF;
+	background: #DDD  !important;
+
+}
+
+.mbutton
+{
+margin-left: 5px;
+}
+ a.mbutton {
+	text-decoration: none;
+	color: #FFF;
+	display: inline-block;
+	padding: 7px 17px 7px 17px;
+	font-size: 16px;
+	background: #FF4400;
+	-webkit-border-radius: 2px 2px 2px 2px;
+	-moz-border-radius: 2px 2px 2px 2px;
+	-khtml-border-radius: 2px 2px 2px 2px;
+	border-radius: 2px 2px 2px 2px;
+}
+
+ a.mbuttonr {
+	text-decoration: none;
+	color: #FFF;
+	display: inline-block;
+	padding: 7px 17px 7px 17px;
+	font-size: 16px;
+	background: #b20101;
+	-webkit-border-radius: 2px 2px 2px 2px;
+	-moz-border-radius: 2px 2px 2px 2px;
+	-khtml-border-radius: 2px 2px 2px 2px;
+	border-radius: 2px 2px 2px 2px;
+}
+
+
+.mytable thead, tfoot  {background: #ddefd9; height: 40px; }
+.mytable thead td { padding-left: 10px; font-size: 17px; font-weight: normal;}
+.mytable tbody tr:nth-child(2n+1) {background: #f8f8f8;}
+.mytable td { padding: 5px;}
+.mynotable td {padding: 5px;}
+
+.mytable .desc {
+    background: url("../image/desc.png") no-repeat scroll right center transparent;
+    padding-right: 15px;
+}
+
+.mytable .asc {
+    background: url("../image/asc.png") no-repeat scroll right center transparent;
+    padding-right: 15px;
+}
+
+ a.markbutton-active {
+	text-decoration: none;
+	color: #FFF;
+	display: inline-block;
+	padding: 6px 16px 3px 16px;
+	font-size: 17px;
+	line-height: 20px;
+	background: #7D00A6;
+   /*
+	-webkit-border-radius: 2px 2px 2px 2px;
+	-moz-border-radius: 2px 2px 2px 2px;
+	-khtml-border-radius: 2px 2px 2px 2px;
+	border-radius: 2px 2px 2px 2px;
+	*/
+}

@@ -1,0 +1,131 @@
+
+.viewport{max-width:960px; margin: 0 auto; height:100%; padding: 0px 3% 0px 3%}
+.lt-ie9 .viewport{width:960px;}
+.scrollblock{width:100%; position:relative;}
+
+
+#vignette{ width:100%; }
+#vignette .item{ position:relative; z-index:90000}
+#vignette .slides .vignette-details{position: absolute;  text-align:left; z-index:10000; }
+.lt-ie8 #vignette .slides .vignette-details{margin-left:-500px;}
+#vignette .slides .vignette-details .button{margin-top:15px;font-family: "proxima-nova-n8", "proxima-nova", sans-serif; font-style: normal; font-weight: 800; position: absolute; bottom:0px;}
+#vignette .slides h2{ margin: 0 auto; position:relative;
+font-family: "proxima-nova-n8", "proxima-nova", sans-serif; font-style: normal; font-weight: 600;}
+#vignette .slides h2 .line1{display:block;}
+
+#vignette .article-reveal{display:none; font-family: Verdana, Arial, sans-serif; font-size:10px; line-height:16px; width:400px; overflow:hidden;}
+
+.close-article{position:absolute; top:0px; right:0px; width:27px; height: 27px; text-indent:-9999em; background:url(../image/close.png) no-repeat; z-index:9999999}
+.close-article:hover{opacity:0.4; cursor: pointer;}
+.close-article a{dispaly:block; width:27px; height: 27px; }
+
+/*----------------------------------------------------
+FlexSlider Necessary Styles
+-----------------------------------------------------*/
+.flexslider {width: 100%; text-align:center; margin: 0; padding: 0; overflow:hidden; position:relative; }
+.flexslider .slides{text-align:center;}
+.flexslider .slides > li { text-align: center;display: none; width: 100%; position:relative; } /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img { }
+.flex-pauseplay span {text-transform: capitalize;}
+
+
+
+/*----------------------------------------------------
+FlexSlider Nav
+-----------------------------------------------------*/
+.flex-direction-nav{position: absolute;width:100%; top:0px;top:40%; }
+.flex-direction-nav li{float:left; position:absolute;  width:100%;z-index:0; height:0px; text-indent:-9999px !important;}
+.flex-direction-nav a{display:block; width:35px; height:35px;  text-indent:-9999px !important; position:absolute; color:red;}
+
+.flex-direction-nav a.prev			{float:left; background: url(../image/left-right-sm.png) left top no-repeat; left:20px;}
+.flex-direction-nav a.prev:hover	{ background: url(../image/left-right-sm.png) left -35px no-repeat;}
+
+.flex-direction-nav a.next			{float:right; background: url(../image/left-right-sm.png) right top no-repeat; right:20px;}
+.flex-direction-nav a.next:hover	{ background: url(../image/left-right-sm.png) right -35px no-repeat;}
+
+.tooltip {
+    display:none;
+
+    background: url(../image/tooltip.png) no-repeat;
+    font-size:15px;
+    height:40px;
+    width:137px;
+    padding:20px 25px 10px 25px;
+    color:#fff;
+	text-align:center;
+	z-index:10000 !important;
+	 font-family: "proxima-nova-n4", "proxima-nova", sans-serif; font-style: normal; font-weight: 800;
+  }
+
+
+
+
+/* FlexSlider Necessary Styles
+*********************************/
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+
+/* Direction Nav */
+
+/* Control Nav */
+.flex-control-nav {width: 100%; position: absolute; bottom: 0px; text-align: right; right: 5px;}
+.flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-nav li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer;
+text-indent: 9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; box-shadow: inset 0 0 3px rgba(0,0,0,0.3);}
+.flex-control-nav li a:hover { background: #333; background: rgba(0,0,0,0.7); }
+.flex-control-nav li a.flex-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }
+
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+
+.clone {
+display: none;
+}
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
+
+/* FlexSlider Necessary Styles
+*********************************/
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+.flex-direction-nav {*height: 0;}
+.flex-direction-nav a {width: 30px; height: 30px; margin: 20px 0 0; display: block; background: url(../image/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
+.flex-direction-nav .flex-next {background-position: 100% 0; right: -36px; }
+.flex-direction-nav .flex-prev {left: -36px;}
+.flexslider:hover .flex-next {opacity: 0.8; right: 5px;}
+.flexslider:hover .flex-prev {opacity: 0.8; left: 5px;}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
+.flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
+
