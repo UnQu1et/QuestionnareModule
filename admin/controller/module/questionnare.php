@@ -13,7 +13,7 @@ class ControllerModuleQuestionnare extends Controller {
         public function edit() {
             $this->setMainData();
             if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
-		$this->model_module_questionnare->edit($this->request->post);		
+		$this->model_module_questionnare->edit($this->request->post);	
 		$this->session->data['success'] = $this->language->get('text_success');
 		$this->redirect($this->url->link('module/questionnare', 'token=' . $this->session->data['token'], 'SSL'));
             }

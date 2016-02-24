@@ -71,6 +71,8 @@ class ModelModuleQuestionnare extends Model {
             . "index (user),"
             . "index (questionId),"
             . "constraint fk_questionId foreign key (questionId) references questionnare_question(id))");
+        $this->load->model('setting/setting');
+        $this->model_setting_setting->editSetting('questionnare', array('questionnare_module' => array(array('layout_id' => 6, 'position' => 'column_left', 'status' => 1))));
         return true;   
     }
     
