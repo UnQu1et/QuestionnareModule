@@ -65,7 +65,7 @@ class ModelModuleQuestionnare extends Model {
         $this->db->query("create table if not exists questionnare_results "
             . "("
             . "id int not null auto_increment primary key,"
-            . "user char not null,"
+            . "user char(100) not null,"
             . "questionId int not null,"
             . "answer char(255),"
             . "index (user),"
