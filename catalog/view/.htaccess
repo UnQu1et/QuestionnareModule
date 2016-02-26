@@ -1,5 +1,0 @@
-#Deny attempts to view the Htaccess file.
-<Files .htaccess>
-Order allow,deny
-Deny from all
-</Files>
