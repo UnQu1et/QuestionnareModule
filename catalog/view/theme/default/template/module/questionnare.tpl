@@ -41,6 +41,7 @@
         right: -10px;
         margin-left: -15px;
         background-image: url('catalog/view/theme/default/image/closebtn.png');
+        cursor: pointer;
     }
     td.question {
         vertical-align: top;
@@ -60,6 +61,19 @@
     #questionnare-background p {
         font-size: 20px;
         margin-bottom: 50px;
+    }
+    .formfooter {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .submitbtn {
+        display: inline;
+        font-size: 20px;
+        border-radius: 5px;
+        border: 0px; 
+        background-color: #fb6335;
+        color: #fff;
+        cursor: pointer;
     }
 </style>
 <div id="questionnare-background">
@@ -83,6 +97,9 @@
                 </tr>
                 <?php } ?>
             </table>
+            <div class="formfooter">
+                <button class="submitbtn" type="submit">Отправить</button>
+            </div>
         </form>
         <div class="close"></div>
     </div>
