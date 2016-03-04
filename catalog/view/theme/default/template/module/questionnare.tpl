@@ -89,7 +89,7 @@
                         <input type="radio" name="<?php echo $question['id']; ?>" value="2">2
                         <input type="radio" name="<?php echo $question['id']; ?>" value="3">3
                         <input type="radio" name="<?php echo $question['id']; ?>" value="4">4
-                        <input type="radio" name="<?php echo $question['id']; ?>" value="5">5
+                        <input type="radio" name="<?php echo $question['id']; ?>" value="5" checked>5
                         <?php } else { ?>
                         <textarea name="<?php echo $question['id']; ?>" maxlength="1000" rows="3"></textarea>
                         <?php } ?>
@@ -104,4 +104,30 @@
         <div class="close"></div>
     </div>
 </div>
+<script type="text/javascript">
+(function()
+{
+    $("#questionnare-background .close").click(function () {
+        var date = new Date(new Date().getTime() + 60 * 60 * 24);
+        document.cookie = "QuestionnareHoldOwer=; path=/; expires=" + date.toUTCString();
+        $("#column-left").remove();
+    });
+    var postData = $("form#questionnare-form").serialize();
+    $("#questionnare-form .submitbtn").click(function (event) {
+        $.post({
+            url: "<?php echo $action; ?>",
+            data: postData,
+            success: function (data) {
+                $("#questionnare-form, .close").remove();
+                $("#questionnare p").html(data);
+                $("#questionnare").append("<button class=\"okbtn\">Ок</button>");
+                $("#questionnare .okbtn").click(function (){
+                    $("#column-left").remove();
+                });
+            }
+        });
+        event.preventDefault();
+    });
+})();    
+</script>
 

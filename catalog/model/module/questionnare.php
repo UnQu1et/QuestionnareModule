@@ -11,7 +11,7 @@ class ModelModuleQuestionnare extends Model {
                                                                where qr.user = '".$user."')");
         return $query->rows;
     }
-    public function saveAnswer($user, $questionId, $answer) {
+    public function saveAnswer($questionId, $user, $answer) {
         $this->db->query("insert into questionnare_result(user, questionId, answer)
                           values('".$user."','".$questionId."','".$answer."')");
     }
