@@ -12,7 +12,7 @@ class ModelModuleQuestionnare extends Model {
         return $query->rows;
     }
     public function saveAnswer($questionId, $user, $answer) {
-        $this->db->query("insert into questionnare_result(user, questionId, answer)
+        $this->db->query("insert into questionnare_results(user, questionId, answer)
                           values('".$user."','".$questionId."','".$answer."')");
     }
 }

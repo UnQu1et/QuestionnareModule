@@ -19,19 +19,23 @@ class ControllerModuleQuestionnare extends Controller {
     }
     
     public function edit() {
-        if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
-            $this->load->model('module/questionnare');
-            $answers = $this->request->post;
-            foreach ($answers as $id => $answer) {
-                $this->model_module_questionnare->saveAnswer($id, $this->customer->getEmail(), $answer);
+        try {
+            if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
+                $this->load->model('module/questionnare');
+                $answers = $this->request->post;
+                foreach ($answers as $id => $answer) {
+                    $this->model_module_questionnare->saveAnswer($id, $this->customer->getEmail(), $answer);
+                }
+                $this->response->setOutput("Спасибо за участие! Мы обязательно рассмотрим ответы от каждого пользователя!");
             }
-            echo 'Спасибо за участие! Мы обязтельно рассмотрим ответы от каждого пользователя!';
+        } catch (Exception $ex) {
+            $this->response->setOutput("Произошла ошибка при сохранении результатов. Приносим свои извинения.");
         }
     }
     
     protected function validate() {
 		if (!$this->customer->isLogged()) {
-			$this->error['warning'] = 'Вы не авторизованы';
+			$this->error['warning'] = "Вы не авторизованы";
 		}
 
 		if (!$this->error) {

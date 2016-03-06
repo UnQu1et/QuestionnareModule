@@ -66,7 +66,7 @@
         margin-top: 20px;
         text-align: center;
     }
-    .submitbtn {
+    .submitbtn, .okbtn {
         display: inline;
         font-size: 20px;
         border-radius: 5px;
@@ -98,7 +98,7 @@
                 <?php } ?>
             </table>
             <div class="formfooter">
-                <button class="submitbtn" type="submit">Отправить</button>
+                <button class="submitbtn">Отправить</button>
             </div>
         </form>
         <div class="close"></div>
@@ -112,15 +112,17 @@
         document.cookie = "QuestionnareHoldOwer=; path=/; expires=" + date.toUTCString();
         $("#column-left").remove();
     });
-    var postData = $("form#questionnare-form").serialize();
     $("#questionnare-form .submitbtn").click(function (event) {
-        $.post({
+        var postData = $("form#questionnare-form").serialize();
+        $.ajax({
+            type: "post",
             url: "<?php echo $action; ?>",
+            contentType: "application/x-www-form-urlencoded;charset=utf-8",
             data: postData,
             success: function (data) {
                 $("#questionnare-form, .close").remove();
                 $("#questionnare p").html(data);
-                $("#questionnare").append("<button class=\"okbtn\">Ок</button>");
+                $("#questionnare").append("<div class=\"formfooter\"><button class=\"okbtn\">Ок</button></div>");
                 $("#questionnare .okbtn").click(function (){
                     $("#column-left").remove();
                 });
